@@ -1,10 +1,142 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
   <head>
-    <title>Päiväkoodari</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Päiväkoodari — Web development &amp; DevOps</title>
+    <meta
+      name="description"
+      content="Professional, AI-assisted web development and DevOps. From architecture and infrastructure to frontend, monitoring and maintenance."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f2f2f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Päiväkoodari — Web development &amp; DevOps" />
+    <meta
+      property="og:description"
+      content="AI-assisted, human-reviewed web development and DevOps, end to end."
+    />
+    <meta property="og:url" content="https://paivakoodari.fi" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Something coming up</h1>
+    <div class="container">
+      <header class="site-header mono caps">
+        <a href="#top" class="brand">päiväkoodari.fi</a>
+        <nav aria-label="Main">
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="top" class="hero">
+          <div class="card">
+            <div class="card-row">
+              <h1 class="card-name">Päiväkoodari</h1>
+              <p class="card-definition mono">Coder by day.<br />Lumberjack by evening.</p>
+            </div>
+            <div class="card-row card-row--bottom">
+              <p class="card-tagline">
+                Web development &amp; DevOps.<br />From architecture to maintenance.
+              </p>
+              <p class="card-contact mono">
+                <a href="mailto:hello@paivakoodari.fi">hello@paivakoodari.fi</a><br />
+                <a href="https://paivakoodari.fi">paivakoodari.fi</a>
+              </p>
+            </div>
+          </div>
+          <p class="hero-note mono caps">AI-assisted · Human-reviewed · End to end</p>
+        </section>
+
+        <section id="services" class="section">
+          <div class="section-head">
+            <h2 class="section-title mono caps">Services</h2>
+            <p class="muted">One partner for the whole stack — no hand-offs between agencies.</p>
+          </div>
+          <ol class="services">
+            <li>
+              <h3>Architecture</h3>
+              <p>System design, tech choices and roadmaps that hold up as you grow.</p>
+            </li>
+            <li>
+              <h3>Infrastructure</h3>
+              <p>Cloud setup as code — networks, containers, databases, security.</p>
+            </li>
+            <li>
+              <h3>Backend &amp; APIs</h3>
+              <p>Services, integrations and data models built to be maintained.</p>
+            </li>
+            <li>
+              <h3>Frontend</h3>
+              <p>Fast, accessible web apps and sites that people enjoy using.</p>
+            </li>
+            <li>
+              <h3>CI/CD &amp; automation</h3>
+              <p>Pipelines that test, build and ship every change safely.</p>
+            </li>
+            <li>
+              <h3>Monitoring</h3>
+              <p>Logs, metrics and alerts — problems found before users find them.</p>
+            </li>
+            <li>
+              <h3>Maintenance</h3>
+              <p>Updates, patches and steady improvements long after launch.</p>
+            </li>
+            <li>
+              <h3>Consulting</h3>
+              <p>Code reviews, audits and a second opinion for your team.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="approach" class="section">
+          <div class="section-head">
+            <h2 class="section-title mono caps">Approach</h2>
+          </div>
+          <div class="section-body">
+            <p class="statement">AI does the typing. Experience does the thinking.</p>
+            <div class="principles">
+              <div>
+                <h3 class="mono muted">→ Faster</h3>
+                <p>AI-assisted development cuts the time from idea to working software.</p>
+              </div>
+              <div>
+                <h3 class="mono muted">→ Reviewed</h3>
+                <p>Every line is read, tested and owned by a professional developer.</p>
+              </div>
+              <div>
+                <h3 class="mono muted">→ Yours</h3>
+                <p>Clean code, documented infrastructure — no lock-in, ever.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <h2 class="contact-title">Let’s build it.</h2>
+          <p class="muted">Tell what you are working on. A reply comes within one business day.</p>
+          <a class="button mono" href="mailto:hello@paivakoodari.fi">
+            hello@paivakoodari.fi <span aria-hidden="true">→</span>
+          </a>
+        </section>
+      </main>
+
+      <footer class="site-footer mono muted">
+        <span>© <span id="year">2026</span> Päiväkoodari</span>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
