@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products — Päiväkoodari</title>
+    <meta
+      name="description"
+      content="Products built by Päiväkoodari. Featuring Tarjouslaskuri (tarjous.online), a Finnish quoting tool for small businesses."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f2f2f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Products — Päiväkoodari" />
+    <meta
+      property="og:description"
+      content="Tarjouslaskuri: quotes with VAT, PDF and Word export, customers and projects in one place."
+    />
+    <meta property="og:url" content="https://paivakoodari.fi/products.html" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header mono caps">
+        <a href="index.html" class="brand">päiväkoodari.fi</a>
+        <nav aria-label="Main">
+          <a href="index.html#services">Services</a>
+          <a href="products.html" aria-current="page">Products</a>
+          <a href="index.html#approach">Approach</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-intro">
+          <h1 class="page-title">Products</h1>
+          <p class="muted">Software built and run by Päiväkoodari, for real businesses.</p>
+        </section>
+
+        <section class="featured">
+          <div class="featured-main">
+            <p class="mono caps featured-label">Featured · Live</p>
+            <h2 class="featured-name">Tarjouslaskuri</h2>
+            <p class="featured-url mono">tarjous.online</p>
+            <p class="featured-lead">
+              A quoting tool for Finnish entrepreneurs. Make a quote in minutes: price and VAT are
+              calculated automatically, and the finished quote downloads as PDF or Word with your
+              company details and logo.
+            </p>
+            <p class="muted">
+              Customers, projects and schedules stay in one place. It works in the browser, also on
+              a phone, so quotes can be made on site. Interface in Finnish, data stored in the EU.
+            </p>
+            <a class="button mono" href="https://tarjous.online" rel="noopener">
+              Visit tarjous.online <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <aside class="featured-side">
+            <div>
+              <h3 class="mono caps">Pricing</h3>
+              <dl class="facts">
+                <div>
+                  <dt>Free</dt>
+                  <dd>0 €/mo · 1 user · 20 projects &amp; 20 quotes, no time limit</dd>
+                </div>
+                <div>
+                  <dt>Paid</dt>
+                  <dd>10 €/mo + VAT · extra users 5 €/mo + VAT · 14-day trial, no card</dd>
+                </div>
+              </dl>
+            </div>
+            <div>
+              <h3 class="mono caps">Features</h3>
+              <ul class="feature-list">
+                <li>Quotes with automatic VAT</li>
+                <li>PDF and Word export</li>
+                <li>Quote message templates</li>
+                <li>Customer register</li>
+                <li>Project board and calendar</li>
+                <li>Job list and per diems</li>
+                <li>Task list and Trello import</li>
+                <li>MCP connection for AI tools</li>
+              </ul>
+            </div>
+          </aside>
+        </section>
+
+        <section class="contact">
+          <h2 class="contact-title">Need something similar?</h2>
+          <p class="muted">
+            Tarjouslaskuri is built with the same approach as client work. Tell what you want to
+            build.
+          </p>
+          <a class="button mono" href="mailto:hello@paivakoodari.fi">
+            hello@paivakoodari.fi <span aria-hidden="true">→</span>
+          </a>
+        </section>
+      </main>
+
+      <footer class="site-footer mono muted">
+        <span>© <span id="year">2026</span> Päiväkoodari</span>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
