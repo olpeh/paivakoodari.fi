@@ -204,7 +204,8 @@ p {
   .card-photo {
     width: 100%;
     height: auto;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 5 / 4;
+    object-position: 50% 0%;
     border-left: 0;
     border-bottom: 1px solid var(--ink);
   }
