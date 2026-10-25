@@ -129,15 +129,15 @@ p {
   background: var(--ink);
   color: var(--paper);
   border: 1px solid var(--ink);
-  padding: clamp(20px, 5vw, 48px);
   display: flex;
-  gap: clamp(16px, 3vw, 32px);
+  overflow: hidden;
   box-shadow: 0 1px 0 var(--line), 0 30px 60px -30px rgba(0, 0, 0, 0.35);
 }
 
 .card-body {
   flex: 1;
   min-width: 0;
+  padding: clamp(20px, 5vw, 48px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -145,27 +145,22 @@ p {
 
 .card-photo {
   flex: none;
-  align-self: flex-start;
-  width: clamp(72px, 24%, 190px);
-  height: auto;
-  aspect-ratio: 1;
+  width: 36%;
+  height: 100%;
   object-fit: cover;
+  object-position: 50% 30%;
+  filter: grayscale(1) contrast(1.1);
+  border-left: 1px solid var(--ink);
 }
 
 .card-row {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.card-row--bottom {
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .card-name {
-  font-size: clamp(30px, 6vw, 56px);
+  font-size: clamp(30px, 5.2vw, 52px);
   font-weight: 600;
   letter-spacing: -0.035em;
   line-height: 1;
@@ -174,7 +169,6 @@ p {
 .card-definition {
   font-size: clamp(10px, 1.4vw, 12px);
   line-height: 1.6;
-  text-align: right;
   color: var(--card-muted);
 }
 
@@ -188,7 +182,32 @@ p {
 .card-contact {
   font-size: clamp(11px, 1.5vw, 13px);
   line-height: 1.7;
-  text-align: right;
+}
+
+.card-person {
+  font-family: var(--font-sans);
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 560px) {
+  .card {
+    aspect-ratio: auto;
+    flex-direction: column-reverse;
+  }
+
+  .card-body {
+    gap: 32px;
+  }
+
+  .card-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-left: 0;
+    border-bottom: 1px solid var(--ink);
+  }
 }
 
 .hero-note {
@@ -458,10 +477,4 @@ p {
   justify-content: space-between;
   gap: 12px;
   font-size: 12px;
-}
-
-@media (max-width: 560px) {
-  .card-contact {
-    text-align: left;
-  }
 }
